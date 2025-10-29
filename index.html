@@ -46,7 +46,7 @@
             text-transform: uppercase;
             margin-bottom: 15px;
             opacity: 0.8;
-            text-align: left;
+            text-align: center;
         }
         
         .header .title-main {
@@ -57,7 +57,7 @@
             margin-bottom: 10px;
             letter-spacing: -1px;
             text-transform: uppercase;
-            text-align: left;
+            text-align: center;
         }
         
         .header .subtitle {
@@ -66,7 +66,7 @@
             font-weight: 300;
             opacity: 0.7;
             letter-spacing: 1px;
-            text-align: left;
+            text-align: center;
         }
         
         .intro {
@@ -93,25 +93,6 @@
             padding: 30px;
             background: #0a0a0a;
             margin-bottom: 50px;
-            position: relative;
-        }
-        
-        .announcement::before,
-        .announcement::after {
-            content: '';
-            position: absolute;
-            width: 40px;
-            height: 1px;
-            background: #FFD400;
-            top: 50%;
-        }
-        
-        .announcement::before {
-            left: 30px;
-        }
-        
-        .announcement::after {
-            right: 30px;
         }
         
         .announcement p {
@@ -142,8 +123,8 @@
         
         .divider {
             width: 100%;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #FFD400, transparent);
+            height: 2px;
+            background: #FFD400;
             margin: 25px 0;
         }
         
@@ -172,8 +153,8 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
-            width: 4px;
-            height: 4px;
+            width: 6px;
+            height: 6px;
             background: #FFD400;
             border-radius: 50%;
         }
@@ -188,26 +169,8 @@
             padding: 40px;
             margin: 50px 0;
             text-align: center;
-            position: relative;
-        }
-        
-        .highlight-box::before,
-        .highlight-box::after {
-            content: '';
-            position: absolute;
-            width: 80px;
-            height: 2px;
-            background: #FFD400;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-        .highlight-box::before {
-            left: 40px;
-        }
-        
-        .highlight-box::after {
-            right: 40px;
+            border-top: 3px solid #FFD400;
+            border-bottom: 3px solid #FFD400;
         }
         
         .highlight-box .label {
@@ -290,9 +253,9 @@
         }
         
         .footer-divider {
-            width: 40px;
-            height: 1px;
-            background: #cccccc;
+            width: 60px;
+            height: 2px;
+            background: #FFD400;
             margin: 0 auto 25px;
         }
         
@@ -310,6 +273,124 @@
             font-weight: 300;
             margin-top: 25px;
             letter-spacing: 1px;
+        }
+        
+        /* Responsividade */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+            
+            .container {
+                max-width: 100%;
+            }
+            
+            .header {
+                padding: 50px 25px;
+            }
+            
+            .header .title-main {
+                font-size: 32px;
+            }
+            
+            .header .subtitle {
+                font-size: 24px;
+            }
+            
+            .intro {
+                padding: 35px 25px;
+            }
+            
+            .intro p {
+                font-size: 16px;
+            }
+            
+            .content {
+                padding: 35px 25px 0;
+            }
+            
+            .announcement {
+                padding: 25px 15px;
+                margin-bottom: 35px;
+            }
+            
+            .section {
+                margin-bottom: 40px;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+            
+            .list-minimal li {
+                font-size: 15px;
+                padding: 15px 0;
+                padding-left: 25px;
+            }
+            
+            .highlight-box {
+                padding: 30px 20px;
+                margin: 35px 0;
+            }
+            
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            
+            .quote-section {
+                padding: 35px 20px;
+                margin: 35px 0;
+            }
+            
+            .quote-section p {
+                font-size: 16px;
+            }
+            
+            .cta-section {
+                padding: 50px 25px;
+            }
+            
+            .cta-text {
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+            
+            .cta-button {
+                padding: 16px 40px;
+                font-size: 13px;
+                display: block;
+                width: 100%;
+            }
+            
+            .footer {
+                padding: 35px 25px;
+            }
+        }
+        
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                max-width: 700px;
+            }
+            
+            .header {
+                padding: 70px 40px;
+            }
+            
+            .intro {
+                padding: 45px 40px;
+            }
+            
+            .content {
+                padding: 45px 40px 0;
+            }
+            
+            .cta-section {
+                padding: 60px 40px;
+            }
+            
+            .footer {
+                padding: 45px 40px;
+            }
         }
     </style>
 </head>
@@ -371,7 +452,7 @@
             
             <div class="highlight-box">
                 <div class="label">Período de Inscrições</div>
-                <div class="date">01 nov — 06 jan</div>
+                <div class="date">01 nov — 01 jan</div>
             </div>
             
             <div class="quote-section">
@@ -385,7 +466,7 @@
             <p class="cta-text">
                 Dê o primeiro passo para transformar sua carreira<br>e venha fazer parte do Grupo The Best
             </p>
-            <a href="https://thebestacai.gupy.io/" class="cta-button">Inscreva-se agora</a>
+            <a href="https://trainee.thebestacai.com.br/" class="cta-button">Inscreva-se agora</a>
         </div>
         
         <div class="footer">
