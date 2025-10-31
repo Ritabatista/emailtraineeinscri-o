@@ -26,15 +26,24 @@
         
         .header {
             background: #000000;
-            padding: 80px 50px;
+            padding: 40px 50px 60px;
             text-align: center;
             position: relative;
+        }
+        
+        .logo-container {
+            margin-bottom: 30px;
+        }
+        
+        .logo-container img {
+            max-width: 200px;
+            height: auto;
         }
         
         .decorative-line {
             width: 60px;
             height: 3px;
-            background: #FFD400;
+            background: #ffad00;
             margin: 0 auto 25px;
         }
         
@@ -50,7 +59,7 @@
         }
         
         .header .title-main {
-            color: #FFD400;
+            color: #ffad00;
             font-size: 48px;
             font-weight: 300;
             line-height: 1.2;
@@ -67,6 +76,18 @@
             opacity: 0.7;
             letter-spacing: 1px;
             text-align: center;
+        }
+        
+        .crown-divider {
+            text-align: center;
+            padding: 30px 0;
+            background: #ffffff;
+        }
+        
+        .crown-divider img {
+            max-width: 80px;
+            height: auto;
+            opacity: 0.9;
         }
         
         .intro {
@@ -96,7 +117,7 @@
         }
         
         .announcement p {
-            color: #FFD400;
+            color: #ffad00;
             font-size: 16px;
             font-weight: 400;
             letter-spacing: 2px;
@@ -124,7 +145,7 @@
         .divider {
             width: 100%;
             height: 2px;
-            background: #FFD400;
+            background: #ffad00;
             margin: 25px 0;
         }
         
@@ -156,7 +177,7 @@
             transform: translateY(-50%);
             width: 6px;
             height: 6px;
-            background: #FFD400;
+            background: #ffad00;
             border-radius: 50%;
         }
         
@@ -170,8 +191,8 @@
             padding: 40px;
             margin: 50px 0;
             text-align: center;
-            border-top: 3px solid #FFD400;
-            border-bottom: 3px solid #FFD400;
+            border-top: 3px solid #ffad00;
+            border-bottom: 3px solid #ffad00;
         }
         
         .highlight-box .label {
@@ -229,7 +250,7 @@
         
         .cta-button {
             display: inline-block;
-            background: #FFD400;
+            background: #ffad00;
             color: #000000;
             padding: 18px 60px;
             text-decoration: none;
@@ -238,12 +259,12 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             transition: all 0.4s ease;
-            border: 2px solid #FFD400;
+            border: 2px solid #ffad00;
         }
         
         .cta-button:hover {
             background: transparent;
-            color: #FFD400;
+            color: #ffad00;
         }
         
         .footer {
@@ -252,10 +273,19 @@
             text-align: center;
         }
         
+        .footer-logo {
+            margin-bottom: 30px;
+        }
+        
+        .footer-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+        
         .footer-divider {
             width: 60px;
             height: 2px;
-            background: #FFD400;
+            background: #ffad00;
             margin: 0 auto 25px;
         }
         
@@ -286,7 +316,15 @@
             }
             
             .header {
-                padding: 50px 25px;
+                padding: 30px 25px 40px;
+            }
+            
+            .logo-container img {
+                max-width: 150px;
+            }
+            
+            .crown-divider img {
+                max-width: 60px;
             }
             
             .header .title-main {
@@ -365,6 +403,10 @@
             .footer {
                 padding: 35px 25px;
             }
+            
+            .footer-logo img {
+                max-width: 120px;
+            }
         }
         
         @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -373,7 +415,7 @@
             }
             
             .header {
-                padding: 70px 40px;
+                padding: 50px 40px 60px;
             }
             
             .intro {
@@ -397,10 +439,17 @@
 <body>
     <div class="container">
         <div class="header">
+            <div class="logo-container">
+                <img src="https://email-editor-production.s3.amazonaws.com/images/690553/editor_images/Logo-The-Best-a%C3%A7a%C3%AD-Amadelli-%28amarelo-e-preto%29.png" alt="The Best Açaí">
+            </div>
             <div class="decorative-line"></div>
             <h1>Inscrições Abertas</h1>
             <div class="title-main">TRAINEE 2026</div>
             <div class="subtitle">THE BEST AÇAÍ</div>
+        </div>
+        
+        <div class="crown-divider">
+            <img src="https://email-editor-production.s3.amazonaws.com/images/690553/editor_images/COROA.png" alt="Coroa">
         </div>
         
         <div class="intro">
@@ -470,6 +519,9 @@
         </div>
         
         <div class="footer">
+            <div class="footer-logo">
+                <img src="https://email-editor-production.s3.amazonaws.com/images/690553/editor_images/Fa%C3%A7a%20seu%20melhor.png" alt="Faça seu melhor">
+            </div>
             <div class="footer-divider"></div>
             <p>Transforme sua carreira. Transforme o mundo.</p>
             <p class="signature">Um abraço, Equipe The Best Açaí</p>
